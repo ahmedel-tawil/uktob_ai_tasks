@@ -1,0 +1,52 @@
+<!DOCTYOPE html>
+<html>
+<head>
+  <title>Uktob.AI Tasks</title>
+ <link rel="stylesheet" href='/static/style.css' />
+
+</head>
+<body>
+  <h1>Task 2</h1>
+  <h1>API EndPoints Documentation</h1>
+
+  <h2>Base URL</h2>
+  <p>http://localhost:5000</p>
+
+  <h2>Endpoints</h2>
+  <h3>1. Register user</h3>
+  <p>The endpoint accept a post request with  JSON object containing username and password</p>
+
+  <pre>
+    <strong>Endpoint:</strong> /register<br>
+    <strong>Method:</strong> POST<br>
+    <strong>Request Body:</strong> JSON object with a "username" and 'password"  keys<br>
+    <strong>Example:</strong> {"username": 'Ahmed' , "password":1234}<br>
+    <strong>Response:</strong> JSON object with a success message the user is registered successfully.
+  </pre>
+
+  <p>Error Handling:</p>
+  <ul>
+    <li>If the "username" or 'password" keys is missing in the JSON object, an error message is returned with status code 400.</li>
+    <li>if the user already a JSON object return indicating the user already exists .</li>
+  </ul>
+
+  <h3>2. LogIn </h3>
+  <p>The endpoint accept a post request with  JSON object containing username and password</p>
+
+  <pre>
+   <strong>Endpoint:</strong> /login<br>
+    <strong>Method:</strong> POST<br>
+    <strong>Request Body:</strong> JSON object with a "username" and 'password"  keys<br>
+    <strong>Example:</strong> {"username": 'Ahmed' , "password":1234}<br>
+    <strong>Response:</strong> JSON object with a success message the user granted the permission to login.
+  </pre>
+
+  <p>Error Handling:</p>
+  <ul>
+  <li>If the "username" or 'password" keys is missing in the JSON object, an error message is returned with status code 400.</li>
+    <li>if the user not register or password is wrong a message returned with permission denied.</li>
+  </ul>
+
+
+ <h2>Test the  Endpoint</h2>
+  <p>using Postman to send POST requests with the appropriate JSON object to the respective endpoints and test the APIs.</p>

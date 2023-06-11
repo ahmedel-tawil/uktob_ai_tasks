@@ -1,0 +1,51 @@
+<!DOCTYOPE html>
+<html>
+<head>
+  <title>Uktob.AI Tasks</title>
+ <link rel="stylesheet" href='/static/style.css' />
+
+</head>
+<body>
+  <h1>Task 1</h1>
+  <h1>API EndPoints Documentation</h1>
+
+  <h2>Base URL</h2>
+  <p>http://localhost:5000</p>
+
+  <h2>Endpoints</h2>
+  <h3>1. Calculate Sum of Given list of Numbers</h3>
+  <p>The endpoint accept a post request with  JSON object containing a list of numbers</p>
+
+  <pre>
+    <strong>Endpoint:</strong> /calculate_sum<br>
+    <strong>Method:</strong> POST<br>
+    <strong>Request Body:</strong> JSON object with a "numbers_list" key containing a list of numbers.<br>
+    <strong>Example:</strong> {"numbers_list": [6, 7, 9,10, 20]}<br>
+    <strong>Response:</strong> JSON object with a "summation_of_numbers" key containing the sum of the numbers.
+  </pre>
+
+  <p>Error Handling:</p>
+  <ul>
+    <li>If the "numbers_list" key is missing in the JSON object, an error message is returned with status code 400.</li>
+    <li>If the value of "numbers_list" is not a list of numbers, an error message is returned with status code 400.</li>
+  </ul>
+
+  <h3>2. Concatenate Strings</h3>
+  <p>    The endpoint is accepting a JSON object containing two strings return the concatenated result.</p>
+
+  <pre>
+    <strong>Endpoint:</strong> /concatenate_strings<br>
+    <strong>Method:</strong> POST<br>
+    <strong>Request Body:</strong> JSON object with a "string1" key and a "string2" key containing two strings.<br>
+    <strong>Example:</strong>  {"string1": "Ahmed","string2": "El-tawil"}<br>
+    <strong>Response:</strong> JSON object with a "result" key containing the concatenated string.
+  </pre>
+
+  <p>Error Handling:</p>
+  <ul>
+    <li>If either "string1" or "string2" keys not in the JSON object or not provide at all, an error message is returned with status code 400.</li>
+  </ul>
+
+
+ <h2>Test the  Endpoint</h2>
+  <p>using Postman to send POST requests with the appropriate JSON object to the respective endpoints and test the APIs.</p>
