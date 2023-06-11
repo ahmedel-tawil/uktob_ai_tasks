@@ -1,10 +1,10 @@
 # uktob_ai_tasks
-# Task1 Flask API
-API EndPoints Documentation
-Base URL
+# Flask API
+### API EndPoints Documentation
+### Base URL
 http://localhost:5000
-Task 1
-Endpoints
+### Task 1
+### Endpoints
 1. Calculate Sum of Given list of Numbers
 The endpoint accept a post request with JSON object containing a list of numbers
 
@@ -39,8 +39,8 @@ Error Handling:
 If either "string1" or "string2" key is missing in the JSON object, an error message is returned with status code 400.
 
 
-Task 2
-Endpoints
+### Task 2
+### Endpoints
 1. Register user
 The endpoint accept a post request with JSON object containing username and password
 
