@@ -1,5 +1,5 @@
 # uktob_ai_tasks
-# Flask API
+## Flask API
 ### API EndPoints Documentation
 ### Base URL
 http://localhost:5000
@@ -41,7 +41,7 @@ If either "string1" or "string2" key is missing in the JSON object, an error mes
 
 ### Task 2
 ### Endpoints
-1. Register user
+#### 1. Register user
 The endpoint accept a post request with JSON object containing username and password
 
     Endpoint: /register
@@ -54,10 +54,10 @@ The endpoint accept a post request with JSON object containing username and pass
 
     Response: JSON object with a success message the user is registered successfully.
   
-Error Handling:
+#### Error Handling:
 If the "username" or 'password" keys is missing in the JSON object, an error message is returned with status code 400.
 if the user already a JSON object return indicating the user already exists .
-2. LogIn
+#### 2. LogIn
 The endpoint accept a post request with JSON object containing username and password
 
    Endpoint: /login
@@ -70,10 +70,26 @@ The endpoint accept a post request with JSON object containing username and pass
 
     Response: JSON object with a success message the user granted the permission to login.
   
-Error Handling:
+#### Error Handling:
 If the "username" or 'password" keys is missing in the JSON object, an error message is returned with status code 400.
 if the user not register or password is wrong a message returned with permission denied.
 
 
-Test the Endpoint
+#### Test the Endpoint
 using Postman to send POST requests with the appropriate JSON object to the respective endpoints and test the APIs.
+
+#### Run The app
+head over uktop_ai_flask directory, then run the command 
+
+   pip install requirements
+   
+  in order to test the task, run 
+  
+  python app.py
+  
+  for the second task run 
+  
+  python authenticate.py
+  
+ ## React Task.
+ 
