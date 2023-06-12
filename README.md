@@ -92,4 +92,28 @@ head over uktop_ai_flask directory, then run the command
   python authenticate.py
   
  ## React Task.
+ The React apps is a simple frontend applications.divide into 
+ ### task 1
+ String Repater app is to allow the user input a string value "needed to be repeated" and a number value , that used to repeat the string 
  
+ ### task 2 
+ a simple to do list allow user to add tasks and delete them.
+ 
+ ##### both apps includes form validation and error handling.
+ 
+##### in order to run the first task
+head over teh directroy uktob_ai_react/task2 
+then run the following commands
+  npm install 
+  
+  npm start
+  
+ the head over the  http://localhost:3000/ , an start validatiting the inputs. by entring a string and teh reptead string will be rendered.
+ 
+
+ ##### in order  to run the second task
+ head over teh directroy uktob_ai_react/task2
+`then run the following commands
+  npm install 
+  npm start
+ the head over the  http://localhost:3000/  and start adding task and delete them.
